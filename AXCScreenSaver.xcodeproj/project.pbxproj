@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		17DEB0841CB4438500D3246E /* AXCScreenSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 17DEB0831CB4438500D3246E /* AXCScreenSaverView.h */; };
 		17DEB0861CB4438500D3246E /* AXCScreenSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DEB0851CB4438500D3246E /* AXCScreenSaverView.m */; };
+		17DEB08F1CB444E500D3246E /* ScreenSaverVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DEB08E1CB444E500D3246E /* ScreenSaverVideoView.swift */; };
+		17DEB0911CB4455A00D3246E /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 17DEB0901CB4455A00D3246E /* video.mp4 */; };
+		17DEB0991CB4479000D3246E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DEB0981CB4479000D3246E /* AppDelegate.swift */; };
+		17DEB09B1CB4479000D3246E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DEB09A1CB4479000D3246E /* Assets.xcassets */; };
+		17DEB09E1CB4479000D3246E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DEB09C1CB4479000D3246E /* MainMenu.xib */; };
+		17DEB0A31CB448A800D3246E /* ScreenSaverVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DEB08E1CB444E500D3246E /* ScreenSaverVideoView.swift */; };
+		17DEB0A41CB44AD900D3246E /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 17DEB0901CB4455A00D3246E /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,10 +23,25 @@
 		17DEB0831CB4438500D3246E /* AXCScreenSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXCScreenSaverView.h; sourceTree = "<group>"; };
 		17DEB0851CB4438500D3246E /* AXCScreenSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXCScreenSaverView.m; sourceTree = "<group>"; };
 		17DEB0871CB4438500D3246E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17DEB08D1CB444E500D3246E /* AXCScreenSaver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AXCScreenSaver-Bridging-Header.h"; sourceTree = "<group>"; };
+		17DEB08E1CB444E500D3246E /* ScreenSaverVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenSaverVideoView.swift; sourceTree = "<group>"; };
+		17DEB0901CB4455A00D3246E /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		17DEB0961CB4479000D3246E /* ScreenSaverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenSaverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17DEB0981CB4479000D3246E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17DEB09A1CB4479000D3246E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17DEB09D1CB4479000D3246E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		17DEB09F1CB4479000D3246E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		17DEB07C1CB4438500D3246E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17DEB0931CB4479000D3246E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,7 +54,9 @@
 		17DEB0761CB4438500D3246E = {
 			isa = PBXGroup;
 			children = (
+				17DEB0901CB4455A00D3246E /* video.mp4 */,
 				17DEB0821CB4438500D3246E /* AXCScreenSaver */,
+				17DEB0971CB4479000D3246E /* ScreenSaverApp */,
 				17DEB0811CB4438500D3246E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				17DEB0801CB4438500D3246E /* AXCScreenSaver.saver */,
+				17DEB0961CB4479000D3246E /* ScreenSaverApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,9 +75,22 @@
 			children = (
 				17DEB0831CB4438500D3246E /* AXCScreenSaverView.h */,
 				17DEB0851CB4438500D3246E /* AXCScreenSaverView.m */,
+				17DEB08E1CB444E500D3246E /* ScreenSaverVideoView.swift */,
 				17DEB0871CB4438500D3246E /* Info.plist */,
+				17DEB08D1CB444E500D3246E /* AXCScreenSaver-Bridging-Header.h */,
 			);
 			path = AXCScreenSaver;
+			sourceTree = "<group>";
+		};
+		17DEB0971CB4479000D3246E /* ScreenSaverApp */ = {
+			isa = PBXGroup;
+			children = (
+				17DEB0981CB4479000D3246E /* AppDelegate.swift */,
+				17DEB09A1CB4479000D3246E /* Assets.xcassets */,
+				17DEB09C1CB4479000D3246E /* MainMenu.xib */,
+				17DEB09F1CB4479000D3246E /* Info.plist */,
+			);
+			path = ScreenSaverApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,16 +125,37 @@
 			productReference = 17DEB0801CB4438500D3246E /* AXCScreenSaver.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		17DEB0951CB4479000D3246E /* ScreenSaverApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17DEB0A01CB4479000D3246E /* Build configuration list for PBXNativeTarget "ScreenSaverApp" */;
+			buildPhases = (
+				17DEB0921CB4479000D3246E /* Sources */,
+				17DEB0931CB4479000D3246E /* Frameworks */,
+				17DEB0941CB4479000D3246E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenSaverApp;
+			productName = ScreenSaverApp;
+			productReference = 17DEB0961CB4479000D3246E /* ScreenSaverApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		17DEB0771CB4438500D3246E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = CHOI;
 				TargetAttributes = {
 					17DEB07F1CB4438500D3246E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					17DEB0951CB4479000D3246E = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -107,6 +166,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 17DEB0761CB4438500D3246E;
 			productRefGroup = 17DEB0811CB4438500D3246E /* Products */;
@@ -114,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				17DEB07F1CB4438500D3246E /* AXCScreenSaver */,
+				17DEB0951CB4479000D3246E /* ScreenSaverApp */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +184,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DEB0911CB4455A00D3246E /* video.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17DEB0941CB4479000D3246E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DEB09B1CB4479000D3246E /* Assets.xcassets in Resources */,
+				17DEB0A41CB44AD900D3246E /* video.mp4 in Resources */,
+				17DEB09E1CB4479000D3246E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,10 +206,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				17DEB0861CB4438500D3246E /* AXCScreenSaverView.m in Sources */,
+				17DEB08F1CB444E500D3246E /* ScreenSaverVideoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17DEB0921CB4479000D3246E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DEB0A31CB448A800D3246E /* ScreenSaverVideoView.swift in Sources */,
+				17DEB0991CB4479000D3246E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17DEB09C1CB4479000D3246E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17DEB09D1CB4479000D3246E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		17DEB0881CB4438500D3246E /* Debug */ = {
@@ -161,6 +254,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -205,6 +299,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -224,11 +319,15 @@
 		17DEB08B1CB4438500D3246E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AXCScreenSaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CHOI.AXCScreenSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AXCScreenSaver/AXCScreenSaver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -236,12 +335,40 @@
 		17DEB08C1CB4438500D3246E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AXCScreenSaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CHOI.AXCScreenSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AXCScreenSaver/AXCScreenSaver-Bridging-Header.h";
 				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		17DEB0A11CB4479000D3246E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScreenSaverApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CHOI.ScreenSaverApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17DEB0A21CB4479000D3246E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScreenSaverApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CHOI.ScreenSaverApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -264,6 +391,16 @@
 				17DEB08C1CB4438500D3246E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17DEB0A01CB4479000D3246E /* Build configuration list for PBXNativeTarget "ScreenSaverApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17DEB0A11CB4479000D3246E /* Debug */,
+				17DEB0A21CB4479000D3246E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
